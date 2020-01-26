@@ -1,0 +1,28 @@
+#  File created with Medit 4.1a
+#  Release Mar. 30, 2012
+# Created: Sat Jan 25 21:53:01 2020
+
+#  Assign background color
+BackgroundColor
+1.000000 1.000000 1.000000
+
+RenderMode
+hidden
+
+#  Window Size
+WindowSize
+600 600
+# Color palette
+Palette
+0.000000 0.000000 0.000000 0.000000 0.000000 
+
+# Subdomains colors
+NbMaterials
+1
+# Material MAT01 1
+Material MAT01 1
+0.20 0.20 0.20 1.00
+1.00 0.00 0.00 1.00
+0.40 0.40 0.40 1.00
+0.00 0.00 0.00 1.00
+80.00
