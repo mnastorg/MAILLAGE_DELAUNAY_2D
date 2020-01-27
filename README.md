@@ -27,7 +27,7 @@ de notre méthode, programmée dans le langage C. Suite à ce projet, nous somme
   (ajout_point.c).
 	
   - Création de l'histogramme de qualité des éléments de notre maillage. Il s'agit d'un fichier python utilisant 
-  la bibliothèque matplotlib pour l'affichage du graphique). Il prend en entrée un fichier 'histogramme.txt' sortant 
+  la bibliothèque matplotlib pour l'affichage du graphique. Il prend en entrée un fichier 'histogramme.txt' sortant 
   du fichier (qualite.c).
 	
   - Ecriture du maillage dans un format .mesh.
