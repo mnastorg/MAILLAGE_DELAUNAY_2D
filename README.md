@@ -36,4 +36,4 @@ Notre méthode semble être fonctionnelle pour des géométries de difficultés 
 limites pour des géométries plus complexes (ex. une géométrie avec plusieurs sous-domaines). 
 L'affichage est possible en utilisant le logiciel MEDIT et nos fichiers BoiteMesh****.mesh.
 
-Pour plus de détails sur l'implémentation des codes produits voir le fichier pdf "Détails_codes_techniques_de_maillage"
+Pour plus de détails sur l'implémentation des codes produits voir le fichier .pdf "Détails_codes_techniques_de_maillage".
