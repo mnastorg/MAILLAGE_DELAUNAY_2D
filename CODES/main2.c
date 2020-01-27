@@ -142,19 +142,19 @@ int cpt=0;
   final = fopen("BoiteMesh_finie.mesh","r");
   int nbtfinal = nbT(final);
   fprintf(stderr,"Nombre de nouveaux triangles : %d \n",nbtfinal);
-  double *tabQ = calloc(nbTriangles,sizeof(double));
+  double *tabQ = calloc(nbtfinal,sizeof(double));
   tabQuali(tabQ, tabT, tabP2, nbtfinal);
   for(int i = 0; i < nbtfinal; i++)
   {
     fprintf(stderr, "qualite triangle = %d = %lf \n", i, tabQ[i]);
   }
-
+  fclose(final);
 
   //Il y a une erreur de segmentation si l'on retire les free cela provient
   //de la fonction QUALITE joue sur tabE et tabP (si l'on retire un des 2 ca marche)
-//  free(tabE);
-  //free(tabAr);
-  //free(tabQ);
+
+  free(tabAr);
+  free(tabQ);
   free(NewPt);
   free(tabP);
   free(tabT);
@@ -164,6 +164,5 @@ int cpt=0;
   free(tY);
   free(pT);
   free(Tab_longueur);
-
   return EXIT_SUCCESS;
 }
