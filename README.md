@@ -35,4 +35,5 @@ de notre méthode, programmée dans le langage C. Suite à ce projet, nous somme
 Notre méthode semble être fonctionnelle pour des géométries de difficultés croissantes même si nous observons quelques 
 limites pour des géométries plus complexes (ex. une géométrie avec plusieurs sous-domaines). 
 L'affichage est possible en utilisant le logiciel MEDIT et nos fichiers BoiteMesh****.mesh.
+
 Pour plus de détails sur l'implémentation des codes produits voir le fichier pdf "Détails_codes_techniques_de_maillage"
