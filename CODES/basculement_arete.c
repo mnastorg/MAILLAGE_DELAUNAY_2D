@@ -38,43 +38,6 @@ void basculement(int *TabTri,int *Tabarete,double *TabPt,FILE* mesh_init,FILE* m
   int nbPoints=nbP(mesh_delaunay);
   //fclose(mesh_delaunay);
 
-//on fait les modifs pour avoir un probleme
-/*Tabarete[82]=7;
-Tabarete[83]=1;
-TabTri[3*nbTriangles-1]=16;
-TabTri[3*nbTriangles-2]=7;
-TabTri[3*nbTriangles-3]=1;
-TabTri[3*nbTriangles-4]=7;
-TabTri[3*nbTriangles-5]=5;
-TabTri[3*nbTriangles-6]=1;*/
-//on creer un probleme qui n'existe pas on l'enregistre pour montrer la comparaison a la fin
-//dans le cas d'un vrai probleme cette partie d'ecriture de fichier et a supprimer
-/*FILE *mesh2=NULL;
-mesh2= fopen("BoiteMesh_problem.mesh","w+"); //option d'ecriture sur le fichier, il faut réecrire tous les points et triangles
-fprintf(mesh2, "MeshVersionFormatted 2\n");
-fprintf(mesh2, "\nDimension 2\n\n");
-fprintf(mesh2, "Vertices\n");
-fprintf(mesh2, "%d \n",nbPoints);
-for(int i=0;i<nbPoints*2;i+=2)
-{
-  fprintf(mesh2, "%lf %lf %d \n",TabPt[i],TabPt[i+1],0);
-}
-fprintf(mesh2, "\nEdges\n");
-fprintf(mesh2, "%d \n",nb_arete_delaunay);
-for(int i=0;i<2*nb_arete_delaunay;i+=2)
-{
-  fprintf(mesh2, "%d %d %d \n",Tabarete[i],Tabarete[i+1],1);
-}
-fprintf(mesh2, "\nTriangles\n");
-fprintf(mesh2, "%d \n",nbTriangles);//on prend 4 points en entree
-
-for(int i=0;i<3*nbTriangles;i+=3)
-{
-  fprintf(mesh2, "%d %d %d %d \n",TabTri[i],TabTri[i+1],TabTri[i+2],1);
-}
-fprintf(mesh2, "\nend");
-fclose(mesh2); //fin de la partie a enlever dans le cas d'un vraie basculement
-*/
 for (int i=0; i<2*nb_arete_init;i+=2)
 {
   Tab_arete_init[i]+=4;

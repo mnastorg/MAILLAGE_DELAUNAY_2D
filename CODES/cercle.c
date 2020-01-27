@@ -758,7 +758,7 @@ int Maj(int **Lc,int *TabTri,double *TabPt,int nbTriangles,double *Pt,int **aret
   int PtCavite=0;
   //int *areteCavite=NULL;
   //areteCavite=calloc(1,sizeof(int));
-  PtCavite=testOrdo(Lc,TabTri,nbTriangles,TailleLc,areteCavite); //semble correcte a modifier son utilisation
+  PtCavite=testOrdo(Lc,TabTri,nbTriangles,TailleLc,areteCavite);
   //les aretes de la cavite son dans areteCavite
   //int testOrdo(int **Lc,int *TabTri,int nbTriangles,int **ptcaviteOrdo,int TailleLc)
 fprintf(stderr, "taille Lc %d %d %d  \n",TailleLc,(*Lc)[0],(*Lc)[TailleLc-1]);

@@ -5,7 +5,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-int test_inscrit(double *p1,double *p2,double *p3,double *p4);
 int test_inscritm(double *p1,double *p2,double *p3,double *p4);
 void init(double **TabVoisin,int nbTriangles);
 void rtabVoisin(int *TabTri,double **TabVoisin,int nbTriangles);
